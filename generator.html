@@ -41,18 +41,23 @@
       <div class="column">
      <label class="labelEstilo">
       <div class="grid-container-para labelone">
+        <div class="grid-one">
+          <input type="radio" class="input-para um" name="usado" value="Produtos" checked>
        <h4>Produtos</h4>
-       <input type="radio" class="input-para" name="usado" value="Produtos" checked>
        <p class="p-nomePara">O nome criado será utilizando em um produto. </p>
+      </div>
       </div>
      </label>
      
 
      <label class="labelEstilo">
       <div class="grid-container-para">
+        <div class="grid-two">
+          <input type="radio" class="input-para dois" name="usado" value="Serviços">
       <h4>Serviços</h4>
-      <input type="radio" class="input-para" name="usado" value="Serviços">
+      
         <p class="p-nomePara">O nome criado será a marca de uma empresa que presta serviços (presencial ou virtual).</p>
+      </div>
         </div>
      </label>
       </div>
@@ -61,40 +66,41 @@
      <label class="labelEstilo">
       <div class="grid-container-para ">
         <div class="grid-tree">
+          <input type="radio" class="input-para dois" name="usado" value="Comércio">
       <h4>Comércio</h4>
-      <input type="radio" class="input-para" name="usado" value="Comércio">
+      
         <p class="p-nomePara">O nome criado será utilizado como marca de uma loja (física ou digital).</p>
         </div>
         </div>
      </label>
      
      <label class="labelEstilo">
+      
       <div class="grid-container-para">
+        <div class="grif-for">
+          <input type="radio" class="input-para dois" name="usado" value="Nome artístico ou de influenciador para ser usado por uma pessoa"> 
        <h4>Nome artístico ou influenciador</h4>
-       <input type="radio" class="input-para" name="usado" value="Nome artístico ou de influenciador para ser usado por uma pessoa"> 
+       
        <p class="p-nomePara">O nome criado será utilizado como nome do artista ou em canais de influencer.</p>
+      </div>
       </div>
      </label>
      </div>
      </div>
      <div class="column">
-     <button type="button" class="btnPerguntaPara" id="btn-pergunta-para" value="proximo >">proximo <i class="fas fa-arrow-right"></i></button>
+     <button type="button" class="btnPerguntaPara" id="btn-pergunta-para" value="proximo >">Próximo <i class="fas fa-arrow-right"></i></button>
      </div>
     
     </div>
  
 
     <div class="nome-sobre">
-
        <div class="blocoCor">
-          
           <i id="gray" class="fa-solid fa-minus"></i>
           <i id="green" class="fa-solid fa-minus"></i>
           <i id="gray" class="fa-solid fa-minus"></i>
           <i id="gray" class="fa-solid fa-minus"></i>
-          
         </div>
-
       <h1 class="title">Sobre o negócio</h1>
       <div class="bloco-container">
         <div class="input-box">
@@ -122,7 +128,7 @@
       </div>
       <div class="column columnSobre">
           <button  type="button" class="btnVoltarPerguntaPara" id="btn-voltar-pergunta-para" onclick="voltarSobre()" value=""><i class="fas fa-arrow-left"></i></button>
-          <button type="button" class="btnPerguntaSobre" id="btn-pergunta-sobre" value="proximo">proximo <i class="fas fa-arrow-right"></i></button>
+          <button type="button" class="btnPerguntaSobre" id="btn-pergunta-sobre" value="proximo">Próximo <i class="fas fa-arrow-right"></i></button>
          </div>
      </div>
 
@@ -146,15 +152,17 @@
         <div class="column">
       <label class="labelEstilo">
         <div class="grid-container-estilo"> 
+        <input type="radio" class="input-estilo" name="estilo" value="Variação linguística na palavra com 2 termos curto composta por palavras estrangeiras" checked>
        <h3>Todos</h3>
-       <input type="radio" class="input-estilo" name="estilo" value="Variação linguística na palavra com 2 termos curto composta por palavras estrangeiras" checked>
+       
        <p class="p-nomeEstilo">Opções de todos os estilos</p>
        </div>
       </label>
       <label class="labelEstilo">
         <div class="grid-container-estilo">
+          <input type="radio" class="input-estilo" name="estilo" value="Palavras reais">
        <h3>Palavras reais</h3>
-       <input type="radio" class="input-estilo" name="estilo" value="Palavras reais"> 
+        
        <p class="p-nomeEstilo">Como Movida e Havaianas</p>
       </div>
       </label>
@@ -163,8 +171,9 @@
       <div class="column">
       <label class="labelEstilo">
         <div class="grid-container-estilo">
+          <input type="radio" class="input-estilo" name="estilo" value="Ortografia alternativa"> 
        <h3>Ortografia alternativa</h3>
-       <input type="radio" class="input-estilo" name="estilo" value="Ortografia alternativa"> 
+      
        <p class="p-nomeEstilo">Como Petz e kibon</p>
        </div>
       </label>
@@ -172,8 +181,9 @@
   
       <label class="labelEstilo">
         <div class="grid-container-estilo">
+          <input type="radio" class="input-estilo" name="estilo" value="Palavras estrangeiras"> 
        <h3>Palavras estrangeiras</h3>
-       <input type="radio" class="input-estilo" name="estilo" value="Palavras estrangeiras"> 
+       
        <p class="p-nomeEstilo">Como Apple e Windows</p>
        </div>
       </label>
@@ -182,16 +192,18 @@
       <div class="column">
        <label class="labelEstilo">
         <div class="grid-container-estilo">
+          <input type="radio" class="input-estilo" name="estilo" value="Palavras compostas"> 
        <h3>Palavras compostas</h3>
-       <input type="radio" class="input-estilo" name="estilo" value="Palavras compostas"> 
+      
        <p class="p-nomeEstilo">Como Petrobras e Nubank</p>
        </div>
       </label>
       
       <label class="labelEstilo">
         <div class="grid-container-estilo">
+          <input type="radio" class="input-estilo" name="estilo" value="2 palavras ou termo curto"> 
        <h3>2 palavras ou termo curto</h3> 
-       <input type="radio" class="input-estilo" name="estilo" value="2 palavras ou termo curto"> 
+       
        <p class="p-nomeEstilo">Como Banco do Brasil</p>
       </div>
       </label>
@@ -202,7 +214,7 @@
     <div class="column columnEstilo">
     <button class="btnPergunta-back" onclick="voltarEstilo()"><i class="fas fa-arrow-left"> </i></button>
    
-    <button  class="btnPerguntaEstilo" id="btn-pergunta-estilo" value="proximo">proximo <i class="fas fa-arrow-right"></i></button>
+    <button  class="btnPerguntaEstilo" id="btn-pergunta-estilo" value="proximo">Próximo <i class="fas fa-arrow-right"></i></button>
     
       </div>
     </div>
@@ -224,21 +236,24 @@
 
       <label class="labelAleatorio">
         <div class="grid-container-aleatorio"> 
-        <h3>Menos aleatório</h3><input type="radio" class="input-tipo" name="TipoResposta" value="Ideia mais direta" checked>
+          <input type="radio" class="input-tipo" name="TipoResposta" value="Ideia mais direta" checked>
+        <h3>Menos aleatório</h3>
         <p>Ideias mais diretas.</p> 
         </div>
       </label>
       
       <label class="labelAleatorio">
         <div class="grid-container-aleatorio"> 
-        <h3>Equilibrado</h3><input type="radio" class="input-tipo" name="TipoResposta" value="Resultado mais criativo">
+          <input type="radio" class="input-tipo" name="TipoResposta" value="Resultado mais criativo">
+        <h3>Equilibrado</h3>
         <p>Resultados mais criativos.</p> 
         </div>
       </label>
       
       <label class="labelAleatorio">
         <div class="grid-container-aleatorio"> 
-        <h3>Mais aleatórias</h3><input type="radio" class="input-tipo" name="TipoResposta" value="Resultado mais variado"> 
+          <input type="radio" class="input-tipo" name="TipoResposta" value="Resultado mais variado"> 
+        <h3>Mais aleatórias</h3>
         <p>Resultados mais variados.</p>
         </div>
       </label>
@@ -434,7 +449,7 @@
         </div>
       </div>
           </div> 
-          <button  class="criar-outro baixo" onclick="newName()">Criar outro nome <i class="fa-solid fa-rotate-left"></i></button>
+          <button  class="criar-outro baixo" onclick="newName()">Criar outro nome  <i class="fa-solid fa-rotate-left"></i></button>
           
         
     </section>

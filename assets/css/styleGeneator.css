@@ -35,9 +35,9 @@ header {
   
 .container {
     position: relative;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
-    background: #fff;
+    background: white;
     padding: 25px 0px 50px 0px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -71,6 +71,10 @@ button{
     margin-top: 30px;
 }
 
+textarea:focus {
+    outline: none;
+}
+
 .form .input-box {
     width: 100%;
     margin-top: 20px;
@@ -86,14 +90,23 @@ button{
     width: 100%;
 }
 
+.nome-para{
+   
+    width:100%;
+    
+}
 
 .nome-para label{
     width: 100%;
 }
 
 .labelEstilo{
+
     margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
+
 }
 
 
@@ -101,8 +114,7 @@ button{
     background-color: white;
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.097);
     width: 100%;
-    margin: 1%;
-    padding: 10px;
+    padding: 24px;
     border-radius: 20px;
   }
 
@@ -143,13 +155,23 @@ button{
 
 }
 
+.grif-for{
+    padding: 15px;
+}
 
+.grid-two{
+    padding: 12.5px;
+}
+
+.grid-one{
+    padding: 20px;
+}
 
 .grid-container-para{
   width: 100%;
   background-color: white;
   margin-top: 10px;
-  padding: 10px;
+  padding: 15px;
   height: auto;
   border-radius: 10px;
   box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.097);
@@ -161,7 +183,7 @@ button{
   
 
 .grid-tree{
-   padding: 11px;
+   padding: 15px;
 }
 .nome-para h3{
     color: #333;
@@ -173,16 +195,24 @@ button{
 
 .nome-para h4{
     color: #2D3E50;
+    margin-top: -5%;
+
 }
 
-
-.nome-para input{
-    margin-left: 90%;
+.um{
+    margin-left: 102%;
     margin-top: -100%;
 }
 
+.dois{
+    margin-left: 99%;
+    margin-top: -20px;
+}
+
+
+
 .nome-para p{
-    margin-top: -5%;
+    margin-top: 1%;
     color: #707070;
 }
 
@@ -192,11 +222,12 @@ button{
   color: white;
   width: 30%;
   border-radius: 100px;
-  box-shadow: 1px 1px 8px #00CC66;
+  box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
   border: none;
-  margin-top: 7%;
+  margin-top: 5%;
   padding: 10px;
   transition: transform 0.2s ease;
+  font-family: "Semibold", Arial, sans-serif;
 }
 
 .btnPerguntaPara:active {
@@ -213,7 +244,6 @@ button{
   color: #7D8A98;
   width: 10%;
   border-radius: 100px;
-  box-shadow: 1px 1px 1px #7D8A98;
   border: none;
   padding: 10px;
   transition: transform 0.2s ease;
@@ -237,6 +267,7 @@ button{
 
 .nome-estilo h3{
     color: #2D3E50;
+    margin-top: -20px;
 }
 
 .nome-estilo h1{
@@ -244,16 +275,19 @@ button{
 }
 
 .bloco-container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
 }
 
 .nome-estilo input{
-    margin-left: 90%;
+    margin-left: 99%;
     margin-top: -100%;
 }
 
 .nome-estilo p{
-    margin-top: -5%;
+    margin-top: 1%;
     color: #707070;
 } 
 
@@ -263,7 +297,6 @@ button{
     color: #7D8A98;
     width: 10%;
     border-radius: 100px;
-    box-shadow: 1px 1px 1px #7D8A98;
     border: none;
     padding: 10px;
     margin-top: 1%;
@@ -278,17 +311,15 @@ button{
     background-color: #eaeaea;
 }
 
-.labelone{
-padding: 21px;
-}
+
   
 .columnEstilo{
     height: 50px;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .columnSobre{
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 .columnAleatorio{
@@ -303,10 +334,11 @@ padding: 21px;
     color: white;
     width: 30%;
     border-radius: 100px;
-    box-shadow: 1px 1px 8px #00CC66;
+    box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
     border: none;
     height: 40px;
     transition: transform 0.2s ease;
+    font-family: "Semibold", Arial, sans-serif;
 }
 
 .btnPerguntaEstilo:active {
@@ -328,9 +360,10 @@ padding: 21px;
 }
 
 .nome-sobre textarea{
+    margin-top: 1%;
     border: none;
     resize: none;
-    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.097);
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.097);
     color: #7D8A98;
 }
 
@@ -341,10 +374,11 @@ padding: 21px;
     color: white;
     width: 30%;
     border-radius: 100px;
-    box-shadow: 1px 1px 8px #00CC66;
+    box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
     border: none;
     padding: 10px;
     transition: transform 0.2s ease;
+    font-family: "Semibold", Arial, sans-serif;
 }
 
 .btnPerguntaSobre:active {
@@ -362,14 +396,14 @@ padding: 21px;
 .grid-container-aleatorio {
     width: 100%;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.097);
 }
  
 .aleatoriedade input{
-    margin-left: 95%;
+    margin-left: 96%;
 }
 
 .btnAleatoriedade{
@@ -379,10 +413,11 @@ padding: 21px;
     color: white;
     width: 30%;
     border-radius: 100px;
-    box-shadow: 1px 1px 8px #00CC66;
+    box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
     border: none;
     padding: 10px;
     transition: transform 0.2s ease;
+    font-family: "Semibold", Arial, sans-serif;
 }
 
 .btnAleatoriedade:active {
@@ -399,7 +434,6 @@ padding: 21px;
   color: #7D8A98;
   width: 10%;
   border-radius: 100px;
-  box-shadow: 1px 1px 1px #7D8A98;
   border: none;
   padding: 10px;
   transition: transform 0.2s ease;
@@ -423,24 +457,25 @@ padding: 21px;
 
 .aleatoriedade h3{
     color: #2D3E50;
+    margin-top: -20px;
 }
 
 .aleatoriedade p{
-    margin-top: -3%;
+    margin-top: -1%;
     color: #7D8A98;
 }
 
 .criar-outro{
-    margin-left: 5%;
+    margin-left: 14%;
     margin-right: auto;
-    
     background-color: white;
     color: #333;
     width: 10%;
     border-radius: 100px;
-    box-shadow: 1px 1px 1px #7D8A98;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.08);
     border: none;
-   
+    padding: auto;
+    font-family: "Semibold", Arial, sans-serif;
 }
 
 .criar-outro:hover{
@@ -458,7 +493,7 @@ padding: 21px;
     background-color: white;
     margin-left: -270px;
     margin-top: 20px;
-    margin-right: 260px;
+    margin-right: 270px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 5px 6px 2px rgba(0, 0, 0, 0.097);
@@ -470,7 +505,7 @@ padding: 21px;
     background-color: white;
     margin-left: -260px;
     margin-top: 20px;
-    margin-right: 250px;
+    margin-right: 260px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 5px 6px 2px rgba(0, 0, 0, 0.097);
@@ -520,10 +555,8 @@ padding: 21px;
 .btn-origem-api{
     background-color: #F0F4F6;
     margin-left: 70px;
-    
     border: none;
     border-radius: 20px;
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.097);
 }
 
 .btn-origem-api:hover{
@@ -572,7 +605,7 @@ padding: 21px;
     color: white;
     width: 30%;
     border-radius: 100px;
-    box-shadow: 1px 1px 1px #7D8A98;
+    box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
     border: none;
     padding: 10px;
     margin-top: 10%;
@@ -596,7 +629,7 @@ padding: 21px;
     color: white;
     width: 30%;
     border-radius: 100px;
-    box-shadow: 1px 1px 1px #7D8A98;
+    box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
     border: none;
     padding: 10px;
     margin-top: 10%;
@@ -686,7 +719,7 @@ padding: 21px;
 .btnRespostaVoltar{
     display: none;
     margin-left: auto;
-    margin-right: 10%;
+    margin-right: 22%;
    
     background-color: #F0F4F6;
     color: #7D8A98;
@@ -862,13 +895,19 @@ padding: 21px;
     }
 
      .cima{
-    background-color: coral;
+   
     visibility: hidden;
    }
    .containerPergunta{
     width: 90%;
     margin: auto;
    }
-  
+   .nome-para{
+    width: 100%;
+   }
+
+   .bloco-container{
+    width: 100%;
+   }
 }
    
