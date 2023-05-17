@@ -87,9 +87,13 @@
      </label>
      </div>
      </div>
-     <div class="column">
-     <button type="button" class="btnPerguntaPara" id="btn-pergunta-para" value="proximo >">Próximo <i class="fas fa-arrow-right"></i></button>
-     </div>
+     <div class="column columnEstilo">
+     
+      <button class="btnPergunta-back" onclick="voltarIndex()"><i class="fas fa-arrow-left"> </i></button>
+     
+      <button  class="btnPerguntaPARA" id="btn-pergunta-para" value="proximo">Próximo <i class="fas fa-arrow-right"></i></button>
+      
+        </div>
     
     </div>
  
@@ -152,7 +156,7 @@
         <div class="column">
       <label class="labelEstilo">
         <div class="grid-container-estilo"> 
-        <input type="radio" class="input-estilo" name="estilo" value="Variação linguística na palavra com 2 termos curto composta por palavras estrangeiras" checked>
+        <input type="radio" class="input-estilo" name="estilo" value="palavra com 2 termos curtos composta por palavras estrangeiras" checked>
        <h3>Todos</h3>
        
        <p class="p-nomeEstilo">Opções de todos os estilos</p>
@@ -289,8 +293,10 @@
     </div>
     <div class="divResposta01">
       <p class="res-sobre-p1"  id="sobre"></p>
+
     </div>
-    <p id="resApiDominio"></p>
+    
+    <p class="mobile" id="resApiDominio"></p>
     </div>
     
     <div class="respostaAPI">
@@ -302,7 +308,7 @@
     <div class="divResposta02">
     <p class="res-sobre-p2" id="sobre2"></p>
     </div>
-    <p id="resApiDominio2"></p>
+    <p class="mobile" id="resApiDominio2"></p>
     </div>
 
     <div class="respostaAPI">
@@ -315,7 +321,7 @@
       <p class="res-sobre-p3" id="sobre3"></p>
     </div>
 
-    <p id="resApiDominio3"></p>
+    <p class="mobile" id="resApiDominio3"></p>
     </div>
     </div>
 
@@ -331,7 +337,7 @@
       <p class="res-sobre-p4" id="sobre4"></p>
     </div>
     
-    <p id="resApiDominio4"></p>
+    <p class="mobile" id="resApiDominio4"></p>
     </div>
 
     <div class="respostaAPI">
@@ -344,7 +350,7 @@
       <p class="res-sobre-p5" id="sobre5"></p>
     </div>
     
-    <p id="resApiDominio5"></p>
+    <p class="mobile" id="resApiDominio5"></p>
     </div>
     <div class="respostaAPI">
     <h1 class="H1-resposta H1respostaAPI" id="resposta6"></h1>
@@ -356,7 +362,7 @@
       <p class="res-sobre-p6"  id="sobre6"></p>
     </div>
     
-    <p id="resApiDominio6"></p>
+    <p class="mobile" id="resApiDominio6"></p>
     </div>
     </div>
     </div>

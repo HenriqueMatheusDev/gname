@@ -109,13 +109,12 @@ textarea:focus {
 
 }
 
-
 .grid-container-estilo{
     background-color: white;
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.097);
     width: 100%;
     padding: 24px;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
 .form :where(.input-box input, .select-box) {
@@ -216,27 +215,7 @@ textarea:focus {
     color: #707070;
 }
 
-.btnPerguntaPara{
-  margin: auto;
-  background-color: #00CC66;
-  color: white;
-  width: 30%;
-  border-radius: 100px;
-  box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
-  border: none;
-  margin-top: 5%;
-  padding: 10px;
-  transition: transform 0.2s ease;
-  font-family: "Semibold", Arial, sans-serif;
-}
 
-.btnPerguntaPara:active {
-    transform: translateX(10px);
-}
-
-.btnPerguntaPara:hover{
-    background-color: #03e071;
-}
 
 .btnVoltarPerguntaPara{
   margin-left: auto;
@@ -256,6 +235,8 @@ textarea:focus {
 .btnVoltarPerguntaPara:hover{
     background-color: #eaeaea;
 }
+
+
 
 .nome-para{
     color: #333;
@@ -314,16 +295,16 @@ textarea:focus {
 
   
 .columnEstilo{
-    height: 50px;
-    margin-top: 2%;
+    
+    margin-top: 4%;
 }
 
 .columnSobre{
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 .columnAleatorio{
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 .btnPerguntaEstilo{
@@ -338,7 +319,9 @@ textarea:focus {
     border: none;
     height: 40px;
     transition: transform 0.2s ease;
-    font-family: "Semibold", Arial, sans-serif;
+    font-family: var(--ff-poppins), 'Semibold';
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .btnPerguntaEstilo:active {
@@ -348,6 +331,32 @@ textarea:focus {
 .btnPerguntaEstilo:hover{
     background-color: #03e071;
 }
+
+
+
+.btnPerguntaPARA{
+    margin-right: auto;
+    margin-left: 5%;
+    margin-top: auto;
+    background-color: #00CC66;
+    color: white;
+    width: 30%;
+    border-radius: 100px;
+    box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
+    border: none;
+    height: 40px;
+    transition: transform 0.2s ease;
+    font-family: var(--ff-poppins), 'Semibold';
+    font-weight: 500;
+    font-size: 16px;
+}
+.btnPerguntaPARA:active {
+    transform: translateX(10px);
+  }
+  .btnPerguntaPARA:hover{
+    background-color: #03e071;
+}
+
 
 .nome-sobre h1{
     color: #2D3E50;
@@ -376,9 +385,12 @@ textarea:focus {
     border-radius: 100px;
     box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
     border: none;
-    padding: 10px;
+    padding: 9px;
     transition: transform 0.2s ease;
     font-family: "Semibold", Arial, sans-serif;
+    font-family: var(--ff-poppins), 'Semibold';
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .btnPerguntaSobre:active {
@@ -407,18 +419,24 @@ textarea:focus {
 }
 
 .btnAleatoriedade{
-    margin-right: auto;
+     margin-right: auto;
     margin-left: 5%;
+    margin-top: auto;
     background-color: #00CC66;
     color: white;
     width: 30%;
     border-radius: 100px;
     box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
     border: none;
-    padding: 10px;
+    height: 40px;
     transition: transform 0.2s ease;
-    font-family: "Semibold", Arial, sans-serif;
+    font-family: var(--ff-poppins), 'Semibold';
+    font-weight: 500;
+    font-size: 16px;
+
 }
+
+
 
 .btnAleatoriedade:active {
     transform: translateX(10px);
@@ -465,17 +483,20 @@ textarea:focus {
     color: #7D8A98;
 }
 
+
 .criar-outro{
     margin-left: 14%;
     margin-right: auto;
     background-color: white;
     color: #333;
-    width: 10%;
+    width: 12%;
     border-radius: 100px;
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.08);
     border: none;
     padding: auto;
-    font-family: "Semibold", Arial, sans-serif;
+    font-family: var(--ff-poppins), 'Semibold';
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .criar-outro:hover{
@@ -557,6 +578,10 @@ textarea:focus {
     margin-left: 70px;
     border: none;
     border-radius: 20px;
+    font-family: var(--ff-poppins), 'Semibold';
+    font-weight: 500;
+    font-size: 15px;
+    color:#2D3E50;
 }
 
 .btn-origem-api:hover{
@@ -609,6 +634,9 @@ textarea:focus {
     border: none;
     padding: 10px;
     margin-top: 10%;
+    font-family: var(--ff-poppins), 'Semibold';
+    font-weight: 500;
+    font-size: 16px;
 }
 .btnMoreRes:hover{
     background-color: #03e071;
@@ -636,6 +664,9 @@ textarea:focus {
     position: relative;
     overflow: hidden;
     z-index: 1; /* Adicione um índice z positivo para colocar o texto à frente do elemento ::after */
+    font-family: var(--ff-poppins), 'Semibold';
+    font-weight: 500;
+    font-size: 16px;
   }
   
   .btnMoreResAguardo::after {
@@ -812,12 +843,13 @@ textarea:focus {
     }
 
     .btnPerguntaEstilo{
-        padding: 5px;
+        padding: 3.7px;
         border-radius: 50px;
     }
 
     .btnPerguntaSobre{
-        padding: 7px;
+        
+        padding: 3.7px;
         border-radius: 50px;
     }
 
@@ -826,9 +858,9 @@ textarea:focus {
         border-radius: 50px;
     }
 
-    .btnPerguntaPara{
+    .btnPerguntaPARA{
       
-      padding: 7px;
+      padding: 3.7px;
       border-radius: 50px;
     }
     .btnVoltarPerguntaPara{
@@ -879,6 +911,7 @@ textarea:focus {
         margin: auto;
         width: 100%;
         margin-top: 3%;
+        padding: 2%;
     }
     #green{
         font-size: 4rem;
@@ -894,7 +927,7 @@ textarea:focus {
         margin-top: 5%;
     }
 
-     .cima{
+    .cima{
    
     visibility: hidden;
    }
@@ -909,5 +942,9 @@ textarea:focus {
    .bloco-container{
     width: 100%;
    }
+   .mobile{
+    text-align: center;
+   }
+
 }
    
