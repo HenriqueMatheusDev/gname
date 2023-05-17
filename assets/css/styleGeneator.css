@@ -651,38 +651,48 @@ textarea:focus {
     }
   }
   
-  .btnMoreResAguardo {
+
+  @keyframes loadingAnimation {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .blocoLogin i {
+    animation: loadingAnimation 1.5s infinite;
+  }
+  
+  #ani {
+    animation-delay: 0s;
+  }
+  
+  #ani2 {
+    animation-delay: 0.5s;
+  }
+  
+  #ani3 {
+    animation-delay: 1s;
+  }
+  
+.blocoLogin i{
+    color:#00CC66
+}
+
+.blocoLogin {
     margin: auto;
-    background-color: #7afebc;
-    color: white;
-    width: 30%;
-    border-radius: 100px;
-    box-shadow: 0px 2px 12px rgba(71, 211, 119, 0.5);
-    border: none;
-    padding: 10px;
     margin-top: 10%;
-    position: relative;
-    overflow: hidden;
-    z-index: 1; /* Adicione um índice z positivo para colocar o texto à frente do elemento ::after */
-    font-family: var(--ff-poppins), 'Semibold';
-    font-weight: 500;
-    font-size: 16px;
-  }
-  
-  .btnMoreResAguardo::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to left, #fff, #00CC66); /* Defina as cores desejadas para o gradiente */
-    background-size: 200% 100%;
-    animation: loadingAnimation 33s linear infinite; /* Defina a duração e a aceleração desejadas */
-    z-index: -1; /* Adicione um índice z negativo para colocar o elemento ::after atrás do texto */
-  }
-  
+}
+
+
 
 .origemName{
     color: #03e071;
