@@ -1,472 +1,850 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Gerador de nomes</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styleGeneator.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    
-    
-</head>
-<body >
-  <header> 
-
-  <div class="column">
-  <button class="btnRespostaVoltar" id="btnRespostaVoltar" onclick="voltarAPI()"><i class="fas fa-arrow-left"></i></button>
-  <div class="imgLogo">
-    <img class="images" src="assets/images/logo-removebg-preview.png" width="300" height="33" alt="">
-  </div>
-  
-<button  class="criar-outro cima" id="cima" onclick="newName()">Criar outro nome <i class="fa-solid fa-rotate-left"></i></button>
-  </div>
- </header>
-  <section class="container">
-    <div class="containerPergunta">
-
-  <form class="form" id="form-pergunta-chat">
-      
-    <div class="nome-para">
-   
-        <div class="blocoCor">
-          <i id="green" class="fa-solid fa-minus"></i>
-          <i id="gray" class="fa-solid fa-minus"></i>
-          <i id="gray" class="fa-solid fa-minus"></i>
-          <i id="gray" class="fa-solid fa-minus"></i>
-          
-        </div>
-     <h1 class="title">Nome para:</h1>
-     <div class="input-box address">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styleGeneator.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
       <div class="column">
-     <label class="labelEstilo">
-      <div class="grid-container-para labelone">
-        <div class="grid-one">
-          <input type="radio" class="input-para um" name="usado" value="Produtos" checked>
-       <h4>Produtos</h4>
-       <p class="p-nomePara">O nome criado será utilizando em um produto. </p>
-      </div>
-      </div>
-     </label>
-     
+        <button
+          class="btnRespostaVoltar"
+          id="btnRespostaVoltar"
+          onclick="voltarAPI()"
+        >
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <div class="imgLogo">
+          <img
+            class="images"
+            src="assets/images/logo-removebg-preview.png"
+            width="300"
+            height="33"
+            alt=""
+          />
+        </div>
 
-     <label class="labelEstilo">
-      <div class="grid-container-para">
-        <div class="grid-two">
-          <input type="radio" class="input-para dois" name="usado" value="Serviços">
-      <h4>Serviços</h4>
-      
-        <p class="p-nomePara">O nome criado será a marca de uma empresa que presta serviços (presencial ou virtual).</p>
+        <button class="criar-outro cima" id="cima" onclick="newName()">
+          Criar outro nome <i class="fa-solid fa-rotate-left"></i>
+        </button>
       </div>
-        </div>
-     </label>
-      </div>
+    </header>
+    <section class="container">
+      <div class="containerPergunta">
+        <form class="form" id="form-pergunta-chat">
+          <div class="nome-para">
+            <div class="blocoCor">
+              <i id="green" class="fa-solid fa-minus"></i>
+              <i id="gray" class="fa-solid fa-minus"></i>
+              <i id="gray" class="fa-solid fa-minus"></i>
+              <i id="gray" class="fa-solid fa-minus"></i>
+            </div>
+            <h1 class="title">Nome para:</h1>
+            <div class="input-box address">
+              <div class="column">
+                <label class="labelEstilo">
+                  <div class="grid-container-para labelone">
+                    <div class="grid-one">
+                      <input
+                        type="radio"
+                        class="input-para um"
+                        name="usado"
+                        value="Produtos"
+                        checked
+                      />
+                      <h4>Produtos</h4>
+                      <p class="p-nomePara">
+                        O nome criado será utilizando em um produto.
+                      </p>
+                    </div>
+                  </div>
+                </label>
 
-      <div class="column">
-     <label class="labelEstilo">
-      <div class="grid-container-para ">
-        <div class="grid-tree">
-          <input type="radio" class="input-para dois" name="usado" value="Comércio">
-      <h4>Comércio</h4>
-      
-        <p class="p-nomePara">O nome criado será utilizado como marca de uma loja (física ou digital).</p>
-        </div>
-        </div>
-     </label>
-     
-     <label class="labelEstilo">
-      
-      <div class="grid-container-para">
-        <div class="grif-for">
-          <input type="radio" class="input-para dois" name="usado" value="Nome artístico ou de influenciador para ser usado por uma pessoa"> 
-       <h4>Nome artístico ou influenciador</h4>
-       
-       <p class="p-nomePara">O nome criado será utilizado como nome do artista ou em canais de influencer.</p>
-      </div>
-      </div>
-     </label>
-     </div>
-     </div>
-     <div class="column columnEstilo">
-     
-      <button class="btnPergunta-back" onclick="voltarIndex()"><i class="fas fa-arrow-left"> </i></button>
-     
-      <button  class="btnPerguntaPARA" id="btn-pergunta-para" value="proximo">Próximo <i class="fas fa-arrow-right"></i></button>
-      
-        </div>
-    
-    </div>
- 
+                <label class="labelEstilo">
+                  <div class="grid-container-para">
+                    <div class="grid-two">
+                      <input
+                        type="radio"
+                        class="input-para dois"
+                        name="usado"
+                        value="Serviços"
+                      />
+                      <h4>Serviços</h4>
 
-    <div class="nome-sobre">
-       <div class="blocoCor">
-          <i id="gray" class="fa-solid fa-minus"></i>
-          <i id="green" class="fa-solid fa-minus"></i>
-          <i id="gray" class="fa-solid fa-minus"></i>
-          <i id="gray" class="fa-solid fa-minus"></i>
-        </div>
-      <h1 class="title">Sobre o negócio</h1>
-      <div class="bloco-container">
-        <div class="input-box">
-      <label class="labelSobre">
-        <h3>Descreva o seu negócio</h3>
-      <textarea class="textareaSobre" id="campo-descricao" rows="3" cols="50" placeholder="Descreva o que você faz"
-      ></textarea></label>
-      </div>
+                      <p class="p-nomePara">
+                        O nome criado será a marca de uma empresa que presta
+                        serviços (presencial ou virtual).
+                      </p>
+                    </div>
+                  </div>
+                </label>
+              </div>
 
-      <div class="input-box">
-      <label class="labelSobre">
-        <h3>Palavas-chave</h3>
-      <textarea class="textareaSobre" id="campo-palavra" rows="3" cols="50" placeholder="Adicione palavras que possam estar relacionadas com a sua ideia ou negócio."
-          ></textarea></label>
+              <div class="column">
+                <label class="labelEstilo">
+                  <div class="grid-container-para">
+                    <div class="grid-tree">
+                      <input
+                        type="radio"
+                        class="input-para dois"
+                        name="usado"
+                        value="Comércio"
+                      />
+                      <h4>Comércio</h4>
+
+                      <p class="p-nomePara">
+                        O nome criado será utilizado como marca de uma loja
+                        (física ou digital).
+                      </p>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="labelEstilo">
+                  <div class="grid-container-para">
+                    <div class="grif-for">
+                      <input
+                        type="radio"
+                        class="input-para dois"
+                        name="usado"
+                        value="Nome artístico ou de influenciador para ser usado por uma pessoa"
+                      />
+                      <h4>Nome artístico ou influenciador</h4>
+
+                      <p class="p-nomePara">
+                        O nome criado será utilizado como nome do artista ou em
+                        canais de influencer.
+                      </p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="column columnEstilo">
+              <button class="btnPergunta-back" onclick="voltarIndex()">
+                <i class="fas fa-arrow-left"> </i>
+              </button>
+              <button
+                class="btnPerguntaPARA"
+                id="btn-pergunta-para"
+                value="proximo"
+              >
+                Próximo <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="column">
+              <a class="VoltarNomeParaA" onclick="voltarIndex()"
+                ><i class="fas fa-arrow-left"> </i
+              ></a>
+              <a class="ProximoNomeParaA" onclick="proximoNomePara()"
+                >Próximo <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
 
-          <div class="input-box">
-          <label class="labelSobre">
-            <h3>Área geográfica de atendimento</h3>
-          <textarea class="textareaSobre" id="campo-cidade" rows="3" cols="50" placeholder="Ex: Todo o Brasil, Cidade de São Paulo - SP, Estado do Paraná."
-          ></textarea>
-        </label>
+          <div class="nome-sobre">
+            <div class="blocoCor">
+              <i id="gray" class="fa-solid fa-minus"></i>
+              <i id="green" class="fa-solid fa-minus"></i>
+              <i id="gray" class="fa-solid fa-minus"></i>
+              <i id="gray" class="fa-solid fa-minus"></i>
+            </div>
+            <h1 class="title">Sobre o negócio</h1>
+            <div class="bloco-container">
+              <div class="input-box">
+                <label class="labelSobre">
+                  <h3>Descreva o seu negócio</h3>
+                  <textarea
+                    class="textareaSobre"
+                    id="campo-descricao"
+                    rows="3"
+                    cols="50"
+                    placeholder="Descreva o que você faz"
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="input-box">
+                <label class="labelSobre">
+                  <h3>Palavas-chave</h3>
+                  <textarea
+                    class="textareaSobre"
+                    id="campo-palavra"
+                    rows="3"
+                    cols="50"
+                    placeholder="Adicione palavras que possam estar relacionadas com a sua ideia ou negócio."
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="input-box">
+                <label class="labelSobre">
+                  <h3>Área geográfica de atendimento</h3>
+                  <textarea
+                    class="textareaSobre"
+                    id="campo-cidade"
+                    rows="3"
+                    cols="50"
+                    placeholder="Ex: Todo o Brasil, Cidade de São Paulo - SP, Estado do Paraná."
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="column columnSobre">
+              <button
+                type="button"
+                class="btnVoltarPerguntaPara"
+                id="btn-voltar-pergunta-para"
+                onclick="voltarSobre()"
+                value=""
+              >
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <button
+                type="button"
+                class="btnPerguntaSobre"
+                id="btn-pergunta-sobre"
+                value="proximo"
+              >
+                Próximo <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="column">
+              <a
+                class="VoltarNome-sobreA"
+                id="btn-voltar-pergunta-para"
+                onclick="voltarSobre()"
+                ><i class="fas fa-arrow-left"></i
+              ></a>
+              <a
+                class="ProximoNome-sobreA"
+                id="btn-pergunta-sobre"
+                onclick="proximosobre()"
+                >Próximo <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="nome-estilo">
+            <div class="blocoCor">
+              <i id="gray" class="fa-solid fa-minus"></i>
+              <i id="gray" class="fa-solid fa-minus"></i>
+              <i id="green" class="fa-solid fa-minus"></i>
+              <i id="gray" class="fa-solid fa-minus"></i>
+            </div>
+
+            <h1 class="title">Selecione um estilo</h1>
+            <div class="input-box address">
+              <div class="wallper">
+                <div class="column">
+                  <label class="labelEstilo">
+                    <div class="grid-container-estilo">
+                      <input
+                        type="radio"
+                        class="input-estilo"
+                        name="estilo"
+                        value="palavra com 2 termos curtos composta por palavras estrangeiras"
+                        checked
+                      />
+                      <h3>Todos</h3>
+
+                      <p class="p-nomeEstilo">Opções de todos os estilos</p>
+                    </div>
+                  </label>
+                  <label class="labelEstilo">
+                    <div class="grid-container-estilo">
+                      <input
+                        type="radio"
+                        class="input-estilo"
+                        name="estilo"
+                        value="Palavras reais"
+                      />
+                      <h3>Palavras reais</h3>
+
+                      <p class="p-nomeEstilo">Como Movida e Havaianas</p>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="column">
+                  <label class="labelEstilo">
+                    <div class="grid-container-estilo">
+                      <input
+                        type="radio"
+                        class="input-estilo"
+                        name="estilo"
+                        value="Ortografia alternativa"
+                      />
+                      <h3>Ortografia alternativa</h3>
+
+                      <p class="p-nomeEstilo">Como Petz e kibon</p>
+                    </div>
+                  </label>
+
+                  <label class="labelEstilo">
+                    <div class="grid-container-estilo">
+                      <input
+                        type="radio"
+                        class="input-estilo"
+                        name="estilo"
+                        value="Palavras estrangeiras"
+                      />
+                      <h3>Palavras estrangeiras</h3>
+
+                      <p class="p-nomeEstilo">Como Apple e Windows</p>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="column">
+                  <label class="labelEstilo">
+                    <div class="grid-container-estilo">
+                      <input
+                        type="radio"
+                        class="input-estilo"
+                        name="estilo"
+                        value="Palavras compostas"
+                      />
+                      <h3>Palavras compostas</h3>
+
+                      <p class="p-nomeEstilo">Como Petrobras e Nubank</p>
+                    </div>
+                  </label>
+
+                  <label class="labelEstilo">
+                    <div class="grid-container-estilo">
+                      <input
+                        type="radio"
+                        class="input-estilo"
+                        name="estilo"
+                        value="2 palavras ou termo curto"
+                      />
+                      <h3>2 palavras ou termo curto</h3>
+
+                      <p class="p-nomeEstilo">Como Banco do Brasil</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="column columnEstilo">
+                <button class="btnPergunta-back" onclick="voltarEstilo()">
+                  <i class="fas fa-arrow-left"> </i>
+                </button>
+                <button
+                  class="btnPerguntaEstilo"
+                  id="btn-pergunta-estilo"
+                  value="proximo"
+                >
+                  Próximo <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="column">
+                <a class="VoltarEstiloA" onclick="voltarEstilo()"
+                  ><i class="fas fa-arrow-left"></i
+                ></a>
+                <a class="ProximoEstiloA" onclick="proximoEstilo()"
+                  >Próximo <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="aleatoriedade">
+            <div class="blocoCor">
+              <i id="gray" class="fa-solid fa-minus"></i>
+              <i id="gray" class="fa-solid fa-minus"></i>
+              <i id="gray" class="fa-solid fa-minus"></i>
+              <i id="green" class="fa-solid fa-minus"></i>
+            </div>
+
+            <h1 class="title">Aleatoriedade</h1>
+            <div class="bloco-container">
+              <label class="labelAleatorio">
+                <div class="grid-container-aleatorio">
+                  <input
+                    type="radio"
+                    class="input-tipo"
+                    name="TipoResposta"
+                    value="Ideia mais direta"
+                    checked
+                  />
+                  <h3>Menos aleatório</h3>
+                  <p>Ideias mais diretas.</p>
+                </div>
+              </label>
+
+              <label class="labelAleatorio">
+                <div class="grid-container-aleatorio">
+                  <input
+                    type="radio"
+                    class="input-tipo"
+                    name="TipoResposta"
+                    value="Resultado mais criativo"
+                  />
+                  <h3>Equilibrado</h3>
+                  <p>Resultados mais criativos.</p>
+                </div>
+              </label>
+
+              <label class="labelAleatorio">
+                <div class="grid-container-aleatorio">
+                  <input
+                    type="radio"
+                    class="input-tipo"
+                    name="TipoResposta"
+                    value="Resultado mais variado"
+                  />
+                  <h3>Mais aleatórias</h3>
+                  <p>Resultados mais variados.</p>
+                </div>
+              </label>
+            </div>
+            <div class="column columnAleatorio">
+              <button
+                class="btnAleatoriedadeVoltar"
+                onclick="voltarAleatoriedade()"
+              >
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <button
+                class="btnAleatoriedade"
+                type="submit"
+                id="btn-pergunta-chat"
+                value="Enviar"
+              >
+                Criar <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="column">
+              <a class="VoltarAleatoriedadeA" onclick="voltarAleatoriedade()"
+                ><i class="fas fa-arrow-left"></i
+              ></a>
+              <a class="ProximoAleatoriedadeA" onclick="proximoAleatoriedade()"
+                >Criar <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </form>
+        <!-- Receber a resposta  -->
       </div>
+    </section>
 
-      </div>
-      <div class="column columnSobre">
-          <button  type="button" class="btnVoltarPerguntaPara" id="btn-voltar-pergunta-para" onclick="voltarSobre()" value=""><i class="fas fa-arrow-left"></i></button>
-          <button type="button" class="btnPerguntaSobre" id="btn-pergunta-sobre" value="proximo">Próximo <i class="fas fa-arrow-right"></i></button>
-         </div>
-     </div>
+    <section class="containerResposta">
+      <div class="resposta">
+        <div class="wrapperResposta">
+          <div class="column">
+            <div class="respostaAPI">
+              <h1 class="H1-resposta H1respostaAPI" id="resposta"></h1>
+              <div class="column">
+                <button
+                  type="button"
+                  onclick="origem1()"
+                  id="btn-res-origem"
+                  class="btn-res1 btn-origem btnAPI"
+                  value="Origem do nome"
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta01">
+                <p class="res-sobre-p1" id="sobre"></p>
+              </div>
 
-    
-    
-    <div class="nome-estilo">
+              <p class="mobile" id="resApiDominio"></p>
+            </div>
 
-      <div class="blocoCor">
-          
-        <i id="gray" class="fa-solid fa-minus"></i>
-        <i id="gray" class="fa-solid fa-minus"></i>
-        <i id="green" class="fa-solid fa-minus"></i>
-        <i id="gray" class="fa-solid fa-minus"></i>
-        
-      </div>
+            <div class="respostaAPI">
+              <h1 class="H1-resposta H1respostaAPI" id="resposta2"></h1>
+              <div class="column">
+                <button
+                  onclick="origem2()"
+                  id="btn-res-origem2"
+                  class="btn-res2 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta02">
+                <p class="res-sobre-p2" id="sobre2"></p>
+              </div>
+              <p class="mobile" id="resApiDominio2"></p>
+            </div>
 
-      <h1 class="title">Selecione um estilo</h1>
-      <div class="input-box address">
-        <div class="wallper">
+            <div class="respostaAPI">
+              <h1 class="H1-resposta H1respostaAPI" id="resposta3"></h1>
+              <div class="column">
+                <button
+                  onclick="origem3()"
+                  id="btn-res-origem3"
+                  id="btn-res-origem3"
+                  class="btn-res3 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta03">
+                <p class="res-sobre-p3" id="sobre3"></p>
+              </div>
 
+              <p class="mobile" id="resApiDominio3"></p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="respostaAPI">
+              <h1 class="H1-resposta H1respostaAPI" id="resposta4"></h1>
+              <div class="column">
+                <button
+                  onclick="origem4()"
+                  id="btn-res-origem4"
+                  class="btn-res4 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta04">
+                <p class="res-sobre-p4" id="sobre4"></p>
+              </div>
+
+              <p class="mobile" id="resApiDominio4"></p>
+            </div>
+
+            <div class="respostaAPI">
+              <h1 class="H1-resposta H1respostaAPI" id="resposta5"></h1>
+              <div class="column">
+                <button
+                  onclick="origem5()"
+                  id="btn-res-origem5"
+                  class="btn-res5 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta05">
+                <p class="res-sobre-p5" id="sobre5"></p>
+              </div>
+
+              <p class="mobile" id="resApiDominio5"></p>
+            </div>
+            <div class="respostaAPI">
+              <h1 class="H1-resposta H1respostaAPI" id="resposta6"></h1>
+              <div class="column">
+                <button
+                  onclick="origem6()"
+                  id="btn-res-origem6"
+                  class="btn-res6 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta06">
+                <p class="res-sobre-p6" id="sobre6"></p>
+              </div>
+
+              <p class="mobile" id="resApiDominio6"></p>
+            </div>
+          </div>
+        </div>
         <div class="column">
-      <label class="labelEstilo">
-        <div class="grid-container-estilo"> 
-        <input type="radio" class="input-estilo" name="estilo" value="palavra com 2 termos curtos composta por palavras estrangeiras" checked>
-       <h3>Todos</h3>
-       
-       <p class="p-nomeEstilo">Opções de todos os estilos</p>
-       </div>
-      </label>
-      <label class="labelEstilo">
-        <div class="grid-container-estilo">
-          <input type="radio" class="input-estilo" name="estilo" value="Palavras reais">
-       <h3>Palavras reais</h3>
-        
-       <p class="p-nomeEstilo">Como Movida e Havaianas</p>
-      </div>
-      </label>
-      </div>
- 
-      <div class="column">
-      <label class="labelEstilo">
-        <div class="grid-container-estilo">
-          <input type="radio" class="input-estilo" name="estilo" value="Ortografia alternativa"> 
-       <h3>Ortografia alternativa</h3>
-      
-       <p class="p-nomeEstilo">Como Petz e kibon</p>
-       </div>
-      </label>
-      
-  
-      <label class="labelEstilo">
-        <div class="grid-container-estilo">
-          <input type="radio" class="input-estilo" name="estilo" value="Palavras estrangeiras"> 
-       <h3>Palavras estrangeiras</h3>
-       
-       <p class="p-nomeEstilo">Como Apple e Windows</p>
-       </div>
-      </label>
-      </div>
-     
-      <div class="column">
-       <label class="labelEstilo">
-        <div class="grid-container-estilo">
-          <input type="radio" class="input-estilo" name="estilo" value="Palavras compostas"> 
-       <h3>Palavras compostas</h3>
-      
-       <p class="p-nomeEstilo">Como Petrobras e Nubank</p>
-       </div>
-      </label>
-      
-      <label class="labelEstilo">
-        <div class="grid-container-estilo">
-          <input type="radio" class="input-estilo" name="estilo" value="2 palavras ou termo curto"> 
-       <h3>2 palavras ou termo curto</h3> 
-       
-       <p class="p-nomeEstilo">Como Banco do Brasil</p>
-      </div>
-      </label>
-      </div>
+          <div class="blocoLogin" id="btnMoreResAguardo">
+            <i id="ani" class="fa-solid fa-circle"></i>
+            <i id="ani2" class="fa-solid fa-circle"></i>
+            <i id="ani3" class="fa-solid fa-circle"></i>
+          </div>
 
-
-    </div>
-    <div class="column columnEstilo">
-    <button class="btnPergunta-back" onclick="voltarEstilo()"><i class="fas fa-arrow-left"> </i></button>
-   
-    <button  class="btnPerguntaEstilo" id="btn-pergunta-estilo" value="proximo">Próximo <i class="fas fa-arrow-right"></i></button>
-    
-      </div>
-    </div>
-     </div>
-
-     <div class="aleatoriedade">
-
-      <div class="blocoCor">
-          
-        <i id="gray" class="fa-solid fa-minus"></i>
-        <i id="gray" class="fa-solid fa-minus"></i>
-        <i id="gray" class="fa-solid fa-minus"></i>
-        <i id="green" class="fa-solid fa-minus"></i>
-        
-      </div>
-
-      <h1 class="title">Aleatoriedade</h1>
-      <div class="bloco-container">
-
-      <label class="labelAleatorio">
-        <div class="grid-container-aleatorio"> 
-          <input type="radio" class="input-tipo" name="TipoResposta" value="Ideia mais direta" checked>
-        <h3>Menos aleatório</h3>
-        <p>Ideias mais diretas.</p> 
+          <button
+            class="btnMoreRes"
+            id="btnMoreRes"
+            onclick="MoreRespostas()"
+            value="Mais opções"
+          >
+            Mais opções <i class="fas fa-arrow-down"></i>
+          </button>
         </div>
-      </label>
-      
-      <label class="labelAleatorio">
-        <div class="grid-container-aleatorio"> 
-          <input type="radio" class="input-tipo" name="TipoResposta" value="Resultado mais criativo">
-        <h3>Equilibrado</h3>
-        <p>Resultados mais criativos.</p> 
-        </div>
-      </label>
-      
-      <label class="labelAleatorio">
-        <div class="grid-container-aleatorio"> 
-          <input type="radio" class="input-tipo" name="TipoResposta" value="Resultado mais variado"> 
-        <h3>Mais aleatórias</h3>
-        <p>Resultados mais variados.</p>
-        </div>
-      </label>
-      
-    </div>
-      <div class="column columnAleatorio">
-       <button class="btnAleatoriedadeVoltar" onclick="voltarAleatoriedade()"><i class="fas fa-arrow-left"></i></button>
-       <button class="btnAleatoriedade" type="submit" id="btn-pergunta-chat" value="Enviar">Criar <i class="fas fa-arrow-right"></i></button>
-      
-    
       </div>
-  
-    </div>
-    
-  </form>
-   <!-- Receber a resposta  --> 
-
-   </div>
-</section>
-   
-  <section class="containerResposta">
-   
-    <div class="resposta">
-     
-    <div class="wrapperResposta">
-
-      <div class="column">
-    <div class="respostaAPI">
-    <h1 class="H1-resposta H1respostaAPI" id="resposta"></h1>
-    <div class="column">
-    <button type="button" onclick="origem1()" id="btn-res-origem" class="btn-res1 btn-origem btnAPI" value="Origem do nome">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>
-    <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
-    </div>
-    <div class="divResposta01">
-      <p class="res-sobre-p1"  id="sobre"></p>
-
-    </div>
-    
-    <p class="mobile" id="resApiDominio"></p>
-    </div>
-    
-    <div class="respostaAPI">
-    <h1 class="H1-resposta H1respostaAPI" id="resposta2"></h1>
-    <div class="column">
-    <button onclick="origem2()" id="btn-res-origem2" class="btn-res2 btn-origem btnAPI" value="Origem do nome ">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>
-    <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
-    </div>
-    <div class="divResposta02">
-    <p class="res-sobre-p2" id="sobre2"></p>
-    </div>
-    <p class="mobile" id="resApiDominio2"></p>
-    </div>
-
-    <div class="respostaAPI">
-    <h1 class="H1-resposta H1respostaAPI" id="resposta3"></h1>
-    <div class="column">
-    <button onclick="origem3()" id="btn-res-origem3" id="btn-res-origem3" class="btn-res3 btn-origem btnAPI" value="Origem do nome ">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>  
-    <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
-    </div>
-    <div class="divResposta03">
-      <p class="res-sobre-p3" id="sobre3"></p>
-    </div>
-
-    <p class="mobile" id="resApiDominio3"></p>
-    </div>
-    </div>
-
-    <div class="column">
-
-    <div class="respostaAPI">
-    <h1 class="H1-resposta H1respostaAPI" id="resposta4"></h1>
-    <div class="column">
-    <button onclick="origem4()" id="btn-res-origem4" class="btn-res4 btn-origem btnAPI" value="Origem do nome ">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>
-    <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
-    </div>
-    <div class="divResposta04">
-      <p class="res-sobre-p4" id="sobre4"></p>
-    </div>
-    
-    <p class="mobile" id="resApiDominio4"></p>
-    </div>
-
-    <div class="respostaAPI">
-    <h1 class="H1-resposta H1respostaAPI" id="resposta5"></h1>
-    <div class="column">
-    <button onclick="origem5()" id="btn-res-origem5" class="btn-res5 btn-origem btnAPI" value="Origem do nome ">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>   
-    <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
-    </div>
-    <div class="divResposta05">
-      <p class="res-sobre-p5" id="sobre5"></p>
-    </div>
-    
-    <p class="mobile" id="resApiDominio5"></p>
-    </div>
-    <div class="respostaAPI">
-    <h1 class="H1-resposta H1respostaAPI" id="resposta6"></h1>
-    <div class="column">
-    <button onclick="origem6()" id="btn-res-origem6" class="btn-res6 btn-origem btnAPI" value="Origem do nome ">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>
-    <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
-    </div>
-    <div class="divResposta06">
-      <p class="res-sobre-p6"  id="sobre6"></p>
-    </div>
-    
-    <p class="mobile" id="resApiDominio6"></p>
-    </div>
-    </div>
-    </div>
-    <div class="column">
-     
-      <div class="blocoLogin" id="btnMoreResAguardo">
-        <i id="ani" class="fa-solid fa-circle"></i>
-        <i id="ani2" class="fa-solid fa-circle"></i>
-        <i id="ani3" class="fa-solid fa-circle"></i>
-      </div>
-
-    <button class="btnMoreRes" id="btnMoreRes" onclick="MoreRespostas()" value="Mais opções">Mais opções <i class="fas fa-arrow-down " ></i></button>
-    
-    </div>
-    </div>
 
       <div class="divRespostaMore">
         <div class="input-box address">
           <div class="column">
-        <div class="respostaAPI-more">
-          <h1 class="" id="respostaMore"></h1>
-          <div class="column">
-          <button onclick="origemMore()" id="btn-res-origemMore" class="btn-res6 btn-origem btnAPI" value="Origem do nome ">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>          
-          <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" ></i></button>
-          </div>
-          <div class="divResposta07">
-            <p class="More-res-sobre-p"  id="sobreMore"></p>
-          </div>
-          
-          <p id="resApiDominioMore"></p>
-        </div>
+            <div class="respostaAPI-more">
+              <h1 class="" id="respostaMore"></h1>
+              <div class="column">
+                <button
+                  onclick="origemMore()"
+                  id="btn-res-origemMore"
+                  class="btn-res6 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="divResposta07">
+                <p class="More-res-sobre-p" id="sobreMore"></p>
+              </div>
 
-        <div class="respostaAPI-more">
-          <h1 class="" id="respostaMore2"></h1>
-          <div class="column">
-          <button onclick="origemMore2()" id="btn-res-origemMore2" class="btn-res6 btn-origem btnAPI" value="Origem do nome ">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>
-          <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
-          </div>
-          <div class="divResposta08">
-            <p class="More-res-sobre-p2"  id="sobreMore2"></p>
-          </div>
-          
-          <p id="resApiDominioMore2"></p>
-        </div>
-        <div class="respostaAPI-more">
-          <h1 class="" id="respostaMore3"></h1>
-          <div class="column">
-          <button onclick="origemMore3()" id="btn-res-origemMore3" class="btn-res6 btn-origem btnAPI" value="Origem do nome ">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>
-          <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
-          </div>
-          <div class="divResposta09">
-            <p class="More-res-sobre-p3"  id="sobreMore3"></p>
-          </div>
-          
-          <p id="resApiDominioMore3"></p>
-        </div>
+              <p id="resApiDominioMore"></p>
+            </div>
+
+            <div class="respostaAPI-more">
+              <h1 class="" id="respostaMore2"></h1>
+              <div class="column">
+                <button
+                  onclick="origemMore2()"
+                  id="btn-res-origemMore2"
+                  class="btn-res6 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta08">
+                <p class="More-res-sobre-p2" id="sobreMore2"></p>
+              </div>
+
+              <p id="resApiDominioMore2"></p>
+            </div>
+            <div class="respostaAPI-more">
+              <h1 class="" id="respostaMore3"></h1>
+              <div class="column">
+                <button
+                  onclick="origemMore3()"
+                  id="btn-res-origemMore3"
+                  class="btn-res6 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta09">
+                <p class="More-res-sobre-p3" id="sobreMore3"></p>
+              </div>
+
+              <p id="resApiDominioMore3"></p>
+            </div>
           </div>
 
           <div class="column">
-        <div class="respostaAPI-more">
-          <h1 class="" id="respostaMore4"></h1>
-          <div class="column">
-          <button onclick="origemMore4()" id="btn-res-origemMore4" class="btn-res6 btn-origem btnAPI" value="Origem do nome " >Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>
-          <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
+            <div class="respostaAPI-more">
+              <h1 class="" id="respostaMore4"></h1>
+              <div class="column">
+                <button
+                  onclick="origemMore4()"
+                  id="btn-res-origemMore4"
+                  class="btn-res6 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta010">
+                <p class="More-res-sobre-p4" id="sobreMore4"></p>
+              </div>
+
+              <p id="resApiDominioMore4"></p>
+            </div>
+            <div class="respostaAPI-more">
+              <h1 class="" id="respostaMore5"></h1>
+              <div class="column">
+                <button
+                  onclick="origemMore5()"
+                  id="btn-res-origemMore5"
+                  class="btn-res6 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta011">
+                <p class="More-res-sobre-p5" id="sobreMore5"></p>
+              </div>
+
+              <p id="resApiDominioMore5"></p>
+            </div>
+            <div class="respostaAPI-more">
+              <h1 class="" id="respostaMore6"></h1>
+              <div class="column">
+                <button
+                  onclick="origemMore6()"
+                  id="btn-res-origemMore6"
+                  class="btn-res6 btn-origem btnAPI"
+                  value="Origem do nome "
+                >
+                  Origem do nome
+                  <i
+                    class="fa-solid fa-chevron-right"
+                    style="color: #00cc66"
+                  ></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-origem-api btnAPI"
+                  value="Solicitar registro"
+                >
+                  Solicitar registro
+                  <i class="fas fa-arrow-right" style="color: #00cc66"></i>
+                </button>
+              </div>
+              <div class="divResposta012">
+                <p class="More-res-sobre-p6" id="sobreMore6"></p>
+              </div>
+
+              <p id="resApiDominioMore6"></p>
+            </div>
           </div>
-          <div class="divResposta010">
-            <p class="More-res-sobre-p4"  id="sobreMore4"></p>
-          </div>
-          
-          <p id="resApiDominioMore4"></p>
-        </div>
-        <div class="respostaAPI-more">
-          <h1 class="" id="respostaMore5"></h1>
-          <div class="column">
-          <button onclick="origemMore5()" id="btn-res-origemMore5" class="btn-res6 btn-origem btnAPI" value="Origem do nome ">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>
-          <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
-          </div>
-          <div class="divResposta011">
-            <p class="More-res-sobre-p5"  id="sobreMore5"></p>
-          </div>
-          
-          <p id="resApiDominioMore5"></p>
-        </div>
-        <div class="respostaAPI-more">
-          <h1 class="" id="respostaMore6"></h1>
-          <div class="column">
-          <button onclick="origemMore6()" id="btn-res-origemMore6" class="btn-res6 btn-origem btnAPI" value="Origem do nome ">Origem do nome <i class="fa-solid fa-chevron-right" style="color: #00CC66;"></i></button>
-          <button type="button" class="btn-origem-api btnAPI" value="Solicitar registro">Solicitar registro <i class="fas fa-arrow-right" style="color: #00CC66"></i></button>
-          </div>
-          <div class="divResposta012">
-            <p class="More-res-sobre-p6"  id="sobreMore6"></p>
-          </div>
-          
-        <p id="resApiDominioMore6"></p> 
-        </div>
         </div>
       </div>
-          </div> 
-          <button  class="criar-outro baixo" onclick="newName()">Criar outro nome  <i class="fa-solid fa-rotate-left"></i></button>
-          
-        
+      <button class="criar-outro baixo" onclick="newName()">
+        Criar outro nome <i class="fa-solid fa-rotate-left"></i>
+      </button>
     </section>
-          
+
     <script src="./assets/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/21d02fe2ff.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/21d02fe2ff.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

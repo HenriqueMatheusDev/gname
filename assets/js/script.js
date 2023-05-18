@@ -52,6 +52,53 @@ function voltarIndex(){
   window.location.href = "index.html";
 }
 
+function proximoNomePara(){
+  if (sobre.style.display === "block") {
+  } else {
+    sobre.style.display = "block";
+    para.style.display = "none";
+  }
+}
+
+function proximosobre(){ 
+  if (estilo.style.display === "block") {
+  } else {
+    estilo.style.display = "block";
+    sobre.style.display = "none";
+
+    document.getElementById("campo-descricao").value = "";
+    document.getElementById("campo-palavra").value = "";
+    document.getElementById("campo-cidade").value = "";
+  }
+}
+
+function proximoEstilo(){
+  if (aleatorio.style.display === "block") {
+  } else {
+    aleatorio.style.display = "block";
+    estilo.style.display = "none";
+  }
+}
+
+function proximoAleatoriedade(){
+  if (res.style.display === "block") {
+  } else {
+    res.style.display = "block";
+    aleatorio.style.display = "none";
+
+    containerAPI.style.display = "none";
+    moreContainerAPI.style.display = "block";
+
+    btnRespostaVoltar.style.display = "block";
+    cima.style.display = "block";
+
+    setTimeout(function () {
+      btnMoreRes.style.display = "block";
+      btnMoreResAguardo.style.display = "none";
+    }, 33000); // 32 segundos em milissegundos
+  }
+}
+
 function newName() {
   res.style.display = "none";
   para.style.display = "block";
